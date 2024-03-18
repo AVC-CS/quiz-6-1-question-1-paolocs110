@@ -9,8 +9,6 @@ using namespace std;
 // Implement all your functions here
 // ******************************
 
-void getTwoValues(int &, int &);
-
 void getTwoValues(int &n1, int &n2) {
     do {
         cout << "Enter the values for begin, end: ";
@@ -28,8 +26,6 @@ int getNextPrime(int n) {
             }
             if (i > (n/2)) {
                 return n;
-                isPrime = true;
-                break;
             }
         }
         n++;
