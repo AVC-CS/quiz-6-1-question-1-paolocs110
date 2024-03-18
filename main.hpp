@@ -17,7 +17,21 @@ void getTwoValues(int &n1, int &n2) {
 }
 
 int getNextPrime(int n) {
-    return 1;
+    bool isPrime = false;
+    while (isPrime = false) {
+        cout << n;
+        for (int i = 2; i < n; i++) { //Chkeck if n is prime
+            if ((n % i) == 0) {
+                break;
+            }
+            if (i > (n/2)) {
+                return n;
+                isPrime = true;
+                break;
+            }
+        }
+        n++;
+    }
 }
 
 int getPrevPrime(int n) {
